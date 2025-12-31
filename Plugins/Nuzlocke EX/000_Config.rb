@@ -36,8 +36,9 @@ module ChallengeModes
       :desc  => _INTL("Cuando un Pokémon se debilite no podrá ser revivido hasta pasarte la liga."),
       :order => 1
     },
-    # Habrá que ir a los eventos de líderes y cambiar las recompensas en base a esto (modificaría los conditional branches
-    # para que el switch que comprueban sea del tipo s:modo? y que así no haya que editar todos los eventos)
+    
+    # En los puntos que quieras que se den las resurrencciones debes poner la siguiente logica:
+    # ChallengeModes.grant_revives_if_needed
     :MODOASISTIDO => {
       :name  => _INTL("- Cláusula Revivir"),
       :display_name  => _INTL("Cláusula Revivir"),
